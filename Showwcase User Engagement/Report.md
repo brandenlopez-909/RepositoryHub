@@ -19,4 +19,5 @@ The only metric to record a user updating their profile is **projects_added**. D
 ### 2. Data Exploration 
 Using Python, the data was visulized and descriptive statistics were explored. Since the data set is small, exploration for seasonaility trends are ignored. Instead, I aimed to explore the realtionship of each variable. The heat map in **Figure 1** shows that the correlation between variables is weak. 
 
-![Figure 1](/pictures/HeatMap.png)
+![Figure 1](/Pictures/HeatMap.png)
+
