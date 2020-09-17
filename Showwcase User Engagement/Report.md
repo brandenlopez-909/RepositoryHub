@@ -16,3 +16,7 @@ After implementing any controllable user enhancements, I began to think of varia
 
 The only metric to record a user updating their profile is **projects_added**. Despite this, Showwcase allows the user to update the profile by updating external links, profile pictures, badges, experinces, articles, and an about me section. In addition, the data set's user-to-user variables are limited to likes and comments and can be expanded to, followers added, visited user pages, and clicks on external links. Lastly, we don't know how long a user engages in profile updates, reads projects, articles, and exploring other user profiles. By adding all mentioned variables, user engagement can more be more efficently tracked. 
 
+### 2. Data Exploration 
+Using Python, the data was visulized and descriptive statistics were explored. Since the data set is small, exploration for seasonaility trends are ignored. Instead, I aimed to explore the realtionship of each variable. The heat map in **Figure 1** shows that the correlation between variables is weak. 
+
+![Figure 1](/pictures/HeatMap.png)
