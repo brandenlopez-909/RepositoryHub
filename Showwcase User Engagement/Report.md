@@ -19,5 +19,45 @@ The only metric to record a user updating their profile is **projects_added**. D
 ### 2. Data Exploration 
 Using Python, the data was visulized and descriptive statistics were explored. Since the data set is small, exploration for seasonaility trends are ignored. Instead, I aimed to explore the realtionship of each variable. The heat map in **Figure 1** shows that the correlation between variables is weak. 
 
-![Figure 1](/Pictures/HeatMap.png)
+![Figure 1](Pictures/HeatMap.png)
 
+
+A weak correlation rules out modeling with linear regression. More so, since the sample size is small (N=299), modeling should be refrained from. In **Figure 2** the data is data is plotted against one another and we view distributions. 
+
+![Figure 2](Pictures/Figure2.png)
+
+It's clear why there is weak correlation based of this figure and we are able to see possible distributions. Every metric with the exception of **session_duration** is grouped near one and appear to follow a logarithmic distribution, while **session_duration** is approching normal distribution. These insights are valuable when N increases and modeling is then capable. 
+
+### 3. Descriptive Statistics 
+While visualiztion provide a quick way to process information, descriptive statistics are best at telling the story of the data. In the table below, we view 
+|Variable               |Average amount|
+|-----------------------|--------------|
+|session_projects_added |      1.618729|
+|session_likes_given    |     10.458194|
+|session_comments_given |      2.408027|
+|inactive_duration      |    731.638796|
+|bugs_in_session        |      1.237458|
+|session_duration       |   1190.414716|
+|login_amount           |      1.280936|
+
+In the above table we see that the average user spends 20 minutes engaged, likes 10 items per session, and comments on a fifth of those. While there is a lot of good, two negative items are present. The average user is inactive for 12 minutes and encounters at least one bug. A reason for the high inactivity could be how **inactive_duration** is recorded. Technolgy reports are often dense in information and require more time to read than a Facebook post. If a user is a slower readers then they might log as "inactive" for short periods, but this is speculation and is not bolstered with data. Instead, a quantitative reason could be bugs. 
+
+**Figure 2** shows that the most inactive time occurs without a bug. In fact, an the average user who does not encounter a bug will spend 10 minutes and 40 seconds inactive. This is only a minute and 20 second difference. 
+
+Lastly, we explore the chance of events occurring in the table below. 
+|Variable         |Chance of occurring|
+|-----------------|-------------------|
+|projects_added   | 0.7558528428093646|
+|likes_given      | 0.7123745819397993|
+|comments_given   | 0.7491638795986622|
+|inactive_status  | 0.5719063545150501|
+|bug_occured      | 0.3879598662207358|
+|multiple_sessions| 0.2508361204013378|
+
+There are many ways of interpreting the above table and many of those ways lead to similar results. Approximetly 75.5\% of logins users added a project. This is a great thing it shows user enagement is relatively high. Many good of user engagement are presented above but two negative statistics stand out. **inactive_status** and **bug_occured** are at 57.1/% and 38.8/%. Having **inactive_status** at such a majority of people only strengthens my assumption that inactive time and occurance occurs by how its defined. What is extremely concerning is that almost 40\% of users encountered a bug. While it is not a majority, [88% of users reported they would abandon an app if they encountered bugs or glitches](https://www.applause.com/blog/app-abandonment-bug-testing#:~:text=A%20survey%20of%20over%201%2C000,least%20one%20bug%20every%20day.). To illustrate how impactful this I will put in the context of a statistics problem. 
+
+![Equation](Pictures/Equation.png)
+
+Thus bugs should be fixed as substantal amount of Showwcase users might leave the platform. 
+
+III. Results. 
