@@ -26,7 +26,7 @@ A weak correlation rules out modeling with linear regression. More so, since the
 
 ![Figure 2](Pictures/Figure2.png)
 
-It's clear why there is a weak correlation and in this figure, we are able to see possible distributions. Every metric with the exception of **session_duration** is grouped near one and appear to follow a logarithmic distribution, while **session_duration** is approaching normal distribution. These insights are valuable when N increases and modeling is then capable. 
+It's clear why there is a weak correlation and in this figure, we are able to see possible distributions. Every metric with the exception of **session_duration** is grouped near one and appears to follow a logarithmic distribution, while **session_duration** is approaching normal distribution. These insights are valuable when N increases and modeling is then capable. 
 
 ### 3. Descriptive Statistics 
 While visualization provides a quick way to process information, descriptive statistics are best at telling the story of the data. In the table below, we view the average amount of engagement each variable received.
