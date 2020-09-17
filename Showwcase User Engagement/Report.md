@@ -56,7 +56,7 @@ Lastly, we explore the chance of events occurring in the table below.
 
 There are many ways of interpreting the above table and many of those ways lead to similar results. Approximetly 75.5\% of logins users added a project. This is a great thing it shows user enagement is relatively high. Many good of user engagement are presented above but two negative statistics stand out. **inactive_status** and **bug_occured** are at 57.1/% and 38.8/%. Having **inactive_status** at such a majority of people only strengthens my assumption that inactive time and occurance occurs by how its defined. What is extremely concerning is that almost 40\% of users encountered a bug. While it is not a majority, [88% of users reported they would abandon an app if they encountered bugs or glitches](https://www.applause.com/blog/app-abandonment-bug-testing#:~:text=A%20survey%20of%20over%201%2C000,least%20one%20bug%20every%20day.). To illustrate how impactful this I will put in the context of a statistics problem. 
 
-![Equation](Pictures/Equation.png)
+![Equation](Pictures/Equation.PNG)
 
 Thus bugs should be fixed as substantal amount of Showwcase users might leave the platform. 
 
