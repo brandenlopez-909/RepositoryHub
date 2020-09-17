@@ -29,7 +29,7 @@ A weak correlation rules out modeling with linear regression. More so, since the
 It's clear why there is a weak correlation and in this figure, we are able to see possible distributions. Every metric with the exception of **session_duration** is grouped near one and appear to follow a logarithmic distribution, while **session_duration** is approaching normal distribution. These insights are valuable when N increases and modeling is then capable. 
 
 ### 3. Descriptive Statistics 
-While visualization provides a quick way to process information, descriptive statistics are best at telling the story of the data. In the table below, we view the average amount of engagement each variable recieved.
+While visualization provides a quick way to process information, descriptive statistics are best at telling the story of the data. In the table below, we view the average amount of engagement each variable received.
 |Variable               |Average amount|
 |-----------------------|--------------|
 |session_projects_added |      1.618729|
@@ -67,4 +67,4 @@ Since no data prior to October 2019 is provided, there is no benchmark to compar
 ## IV. Conclusion
 Showwcase data for October 2019 shows that user engagement is can be measured through likes, comments, time, and profile updates. These are just a few metrics that can be used to better understand user engagement and the metrics should be expanded upon. Data exploration found that user engagement is good and opened us to areas of improvement. Bugs are ramped in Showwcase and the true reason inactive time is high needs identified. 
 
-**Note**: The Python code to form this analysis is presented in a Juypter Notebook which is accesible at my Github. 
+**Note**: The Python code to form this analysis is presented in a Juypter Notebook which is accessible at my Github. 
