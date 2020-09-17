@@ -60,4 +60,11 @@ There are many ways of interpreting the above table and many of those ways lead 
 
 Thus bugs should be fixed as substantal amount of Showwcase users might leave the platform. 
 
-III. Results. 
+## III. Results. 
+
+Since no data prior to October 2019 is provided, there is no benchmark to compare the results, but we found high rates of engagement. All positive user engagement occur at least 70 percent of the time. More so, the average user spends 20 minutes engaged, likes 10 posts, and comments on 2 of them per session. With high engagement statistics, Showwcase is on its way to growing and increasing revenues. A few bad results from the data stand out, there is a high inactivity rate and time, that is possibly the result how inactive is measured, and bugs are frquent in the platform. If fixed Showwcase can minimize inactive time and users leaving. 
+
+## IV. Conclusion
+Showwcase data for October 2019 shows that user engagement is can be measured through likes, comments, time, and profile updates. These are just a few metrics that can be used and to better understand user engagement, the metrics should be expanded upon. Data exploration found that user engagement is good and opened us to areas of improvement. Bugs are ramped in Showwcase and the reason inactive time is high needs to be explored.
+
+**Note**: The Python code to form this analysis is presented in a Juypter Notebook which is accesible at my Github. 
