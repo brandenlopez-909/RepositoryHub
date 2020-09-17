@@ -1,7 +1,7 @@
 # Showwcase Data Analysis: User Engagement
 
 ## I. Introduction and Motivation
-Showwcase is a platform tailored to the tech community in Showwcase a user can share projects and explore others. Showwcase provides many ways to interact and in the data set provided for October 2019, "user engagement" is tracked by logins. Events within each login duration are recorded. With the aim of understanding user engagement in Python, we must first define "user engagement". Deriving my definition of user engagement from [Mixpanel](https://mixpanel.com/topics/what-is-user-engagement/), user engagement is defined by interactions such as likes and comments, and time actively spent the platform.
+Showwcase is a platform tailored to the tech community, in Showwcase a user can share projects and explore others. Showwcase provides many ways to interact and in the data set provided for October 2019, "user engagement" is tracked by logins. Events within each login duration are recorded. With the aim of understanding user engagement in Python, we must first define "user engagement". Deriving my definition of user engagement from [Mixpanel](https://mixpanel.com/topics/what-is-user-engagement/), user engagement is defined by interactions such as likes and comments, and time actively spent the platform.
 
 Since user engagement is important for brand expansion and increasing revenues. It is because of this, metrics of how users are engaged are imperative to the success of platforms.  
 
