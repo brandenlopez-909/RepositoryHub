@@ -1,2 +1,0 @@
-This is a test for the nltk chapter 3 module. 
-When you use f.read() it reads the entire file as one string. 
