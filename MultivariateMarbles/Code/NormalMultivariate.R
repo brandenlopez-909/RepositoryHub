@@ -1,4 +1,4 @@
-setwd("C:/Users/blope/OneDrive/SJSU/MATH257/Project")
+setwd("./Project")
 marbles <- read.table(file = "Marbles.txt", 
                       sep = "\t", header=TRUE)
 str(marbles)
