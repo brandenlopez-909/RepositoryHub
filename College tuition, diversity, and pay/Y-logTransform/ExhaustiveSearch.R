@@ -17,25 +17,10 @@ m = ncol(Colleges)
             + degree_length + room_and_board + 
               + Total.Minority + total_enrollment, data = Colleges[-5,] )
   summary(fit)
-  # Notice how R-squares is not high despite having a tremendous amount of variables. 
+  # R-squared is not high despite having a tremendous amount of variables. 
   # I assume that we will not have a high r-squared in general. 
   
-  vif(fit) # Nothing higher than 10 => No multicolinearity. 
   
-  # Plot for linear predictors. 
-  pairs(I(log(early_career_pay)) ~  make_world_better_percent + stem_percent + total_price 
-        + net_cost + room_and_board + 
-          + Total.Minority + total_enrollment, data = Colleges )
-  # Ask Dr.Bremer if we should transform predictors here? 
-  # I am unsure if we should, linearity is present among most. 
-  par(mfrow=c(2,2))
-  plot(fit) # Plots are immaculate. 
-  par(mfrow=c(1,1))
-  # Check response. 
-  boxcox(fit) # We don't need to log x-form response. 
-  
-  
-#  
 # Now I perform variable selection. Let's start with an exhaustive search. 
 #  
   # 1c from hw10
@@ -63,5 +48,9 @@ m = ncol(Colleges)
   colnames(output)[3:12] <- c("x1", "x2", "x3", "x4", "x5", 
                              "x6", "x7", "x8", "x9", "x10") 
   output
-  # The cp is not the best but I can live with it. Techniically there is a model where 
-  # CP is met, a model with 9 variables (including slope in the count.)
+  # Mallow's cp is not great but is not the only thing to cnosider. 
+  
+  # For 4 or more predictors, our summary statistics cluster around the same 
+  # values. Making manual selection difficult. 
+  
+  # Hopefully our automatic selection methods work well. 

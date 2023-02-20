@@ -1,4 +1,4 @@
-setwd('C:/Users/blope/OneDrive/SJSU/MATH261A/Project/College tuition, diversity, and pay')
+setwd('C:/Users/blope/Documents/GitHub/RepositoryHub/College tuition, diversity, and pay')
 library(leaps)
 
 par(mfrow=c(1,1))
@@ -77,13 +77,12 @@ san_jose <- data.frame(stem_percent = 28.0	, total_price = 27655.5 , type = 1,
 log.y <- predict(fit.5, newdata = san_jose) # log(y)
 
 exp(log.y) # Actual prediction 
-# Real early_career_salary is 63000.0	
+# Real early_career_salary is 63000.0. Not bad. 
 
 exp(-4.805e-06)
 
-exp(fit.5$coefficients[2]) # A 0.4% increase in early salary with a marginal increase in stem percent 
+exp(fit.5$coefficients[2]) # A .4 increase in early salary for each additional 
+# percent of student body in stem. 
 
-(exp(fit.5$coefficients[6]) - 1) *100
-
-
-plot(fit.5)
+(exp(fit.5$coefficients[6]) - 1) *100 # A 0.4% decrease in early salary with a 
+# marginal increase of minorities 

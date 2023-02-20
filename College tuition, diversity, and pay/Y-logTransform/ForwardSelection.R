@@ -1,10 +1,10 @@
-setwd('C:/Users/blope/OneDrive/SJSU/MATH261A/Project/College tuition, diversity, and pay')
+setwd('C:/Users/blope/Documents/GitHub/RepositoryHub/College tuition, diversity, and pay')
 library(car)
 library(leaps)
 library(MASS)
 
 par(mfrow=c(1,1))
-Colleges <- read.csv("../Datasets/cleaned_df.csv", header = TRUE)
+Colleges <- read.csv("./Datasets/cleaned_df.csv", header = TRUE)
 head(Colleges)
 
 n = nrow(Colleges)
@@ -73,8 +73,5 @@ add1(fit.6, I(log(early_career_pay)) ~ make_world_better_percent + stem_percent 
 # Variables are:
 # stem_percent + room_and_board + total_price + total_enrollment + type + Total.Minority
 
-
-vif(fit.6)
-# No multicolinearity
 summary(fit.6)
 # great SE(Res) and solid R^2 

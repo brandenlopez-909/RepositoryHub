@@ -1,4 +1,4 @@
-setwd('C:/Users/blope/OneDrive/SJSU/MATH261A/Project/College tuition, diversity, and pay')
+setwd('C:/Users/blope/Documents/GitHub/RepositoryHub/College tuition, diversity, and pay')
 library(car)
 library(leaps)
 library(MASS)
@@ -13,7 +13,7 @@ m = ncol(Colleges)
 attach(Colleges[-5])
 
 
-# Forward selection had us arrive at 
+# Forward/back selection had us arrive at 
 fit <- lm(early_career_pay~stem_percent+room_and_board + total_price 
             + total_enrollment + tuition_higher_than_national_average
             + type)
@@ -24,8 +24,7 @@ summary(fit)
 
 
 
-# How to compare to the r-squared for lienar vs tree? Use psuedo r-squared
-
+# How to compare to the r-squared for linear vs tree? Use psuedo r-squared
 # rsq (regression only) “pseudo R-squared”: 1 - mse / Var(y)
 # I guess Residual mean deviance == mse in this case
 calc_pseudo_rSquared <- function(y_arg, x_variables){
@@ -63,7 +62,7 @@ tree
 summary(tree)
 calc_pseudo_rSquared(early_career_pay, cbind(stem_percent, total_price, total_enrollment))
 # This mean variance is similar to the last. 
-# Let's residuce the number of terminal nodes.
+# Let's reduce the number of terminal nodes.
 
 
 tree <- tree(early_career_pay~stem_percent + total_price 
@@ -74,9 +73,8 @@ text(tree)
 tree
 summary(tree)
 
-# This model is fucking terrible. 
+# This model is terrible because we only use 4 leaf nodes to describe salary
 calc_pseudo_rSquared(early_career_pay, cbind(stem_percent, total_price, total_enrollment))
 
 
 # Yeah, I think the linear models will be winners. 
-# Up next: Try the multicolinear models. 
